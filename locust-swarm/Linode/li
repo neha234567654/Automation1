@@ -1,0 +1,18 @@
+terraform {
+  required_providers {
+    linode = {
+      source  = "linode/linode"
+      # version = "..."
+    }
+  }
+}
+
+# Configure the Linode Provider
+provider "linode" {
+  # token = "..."
+}
+
+# Create a Linode
+resource "linode_instance" "foobar" {
+  # ...
+}
